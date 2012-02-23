@@ -1,7 +1,7 @@
 /**
  * 
  */
-package code;
+package tests;
 
 /**
  * @author oded
@@ -9,14 +9,14 @@ package code;
  */
 public class Counter {
 
-	private int cnt;
+	private Integer cnt;
 
 	public Counter() {
 		super();
 		this.cnt = 1;
 	}
 
-	public int getValue() {
+	public Integer getValue() {
 		
 		return cnt++;
 	}

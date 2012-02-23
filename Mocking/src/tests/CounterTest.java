@@ -6,8 +6,8 @@ package tests;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import static org.mockito.Mockito.*;
 
-import code.Counter;
 
 /**
  * @author oded
@@ -18,13 +18,18 @@ public class CounterTest {
 	@Test
 	public void test() {
 		
-		int first,second,third;
+		Integer first,mockedFirst;
+		Integer expectedFirst =1;
 		
-		Counter cnt = new Counter();
+		Counter count = new Counter();
 		
-		first = cnt.getValue();
+		Counter mockedCounter = mock(Counter.class);
+		when(mockedCounter.getValue()).thenReturn(1);
 		
-		assertEquals("Wronge Answer !", first, 1);
+		first = count.getValue();
+		mockedFirst = mockedCounter.getValue();
+		
+		assertEquals("Wronge Answer !",first , mockedFirst);
 	}
 
 }
