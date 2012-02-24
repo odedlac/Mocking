@@ -1,7 +1,7 @@
 /**
  * 
  */
-package tests;
+package code;
 
 /**
  * @author oded
@@ -16,6 +16,9 @@ public class Counter {
 		this.cnt = 1;
 	}
 
+	/* (non-Javadoc)
+	 * @see tests.Ct#getValue()
+	 */
 	public Integer getValue() {
 		
 		return cnt++;

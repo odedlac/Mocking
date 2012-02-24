@@ -6,6 +6,8 @@ package tests;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import code.Counter;
 import static org.mockito.Mockito.*;
 
 
