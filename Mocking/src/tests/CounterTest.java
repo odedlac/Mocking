@@ -21,7 +21,6 @@ public class CounterTest {
 	public void test() {
 		
 		Integer first,mockedFirst;
-		Integer expectedFirst =1;
 		
 		Counter count = new Counter();
 		
