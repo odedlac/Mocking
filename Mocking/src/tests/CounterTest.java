@@ -37,6 +37,12 @@ public class CounterTest {
 		mockedFirst = mockedCounter.getValue();
 		
 		assertEquals("Wronge Answer !",first , mockedFirst);
+		first = count.getValue();
+		mockedFirst = mockedCounter.getValue();
+		
+		verify(mockedCounter,atLeast(4)).getValue();
+		
+		assertEquals("Wronge Answer !",first , mockedFirst);
 	}
 
 }
